@@ -1,0 +1,54 @@
+import { Model } from 'sequelize-typescript';
+interface CompanyCreationAttrs {
+    country_id: number;
+    company_name_ar: string;
+    company_name_en: string;
+    district_ar?: string;
+    district_en?: string;
+    street_ar?: string;
+    street_en?: string;
+    region?: string;
+    city?: string;
+    building_number?: string;
+    additional_number?: string;
+    floor_number?: string;
+    office_number?: string;
+    po_box?: string;
+    zip_code?: string;
+    phone?: string;
+    email?: string;
+    website?: string;
+    whatsapp_number?: string;
+    vat_number?: string;
+    cr_number?: string;
+    nphies_id?: string;
+    address_ar?: string;
+    address_en?: string;
+}
+export declare class Company extends Model<Company, CompanyCreationAttrs> {
+    company_name_ar: string;
+    company_name_en: string;
+    district_ar?: string;
+    district_en?: string;
+    street_ar?: string;
+    street_en?: string;
+    country_id: number;
+    region?: string;
+    city?: string;
+    building_number?: string;
+    additional_number?: string;
+    floor_number?: string;
+    office_number?: string;
+    po_box?: string;
+    zip_code?: string;
+    phone?: string;
+    email?: string;
+    website?: string;
+    whatsapp_number?: string;
+    vat_number?: string;
+    cr_number?: string;
+    nphies_id?: string;
+    address_ar?: string;
+    address_en?: string;
+}
+export {};
